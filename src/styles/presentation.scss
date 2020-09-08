@@ -1,0 +1,25 @@
+.presentation {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  margin-top: 150px;
+
+  &__video {
+    width: 100%;
+    height: 590px;
+
+    @media (max-width: $mediaTablet) {
+      width: $sizePlayTablet;
+      height: 450px;
+    }
+
+    @media (max-width: $mediaMobile) {
+      width: $sizePlayMobile;
+      height: 260px;
+
+    }
+  }
+}
